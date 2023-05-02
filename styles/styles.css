@@ -142,7 +142,7 @@ section {
 }
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
-  width: 65%;
+  width: 80%;
   height: 100%;
   background-color: var(--color-secondary);
   position: absolute;
@@ -157,7 +157,7 @@ section {
   background-color: var(--color-black);
   margin-left: 4rem;
   height: 90%;
-  width: 75%;
+  width: 80%;
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
@@ -170,4 +170,61 @@ section {
 }
 .header-content .left-header .image img:hover {
   filter: grayscale(0%);
+}
+.header-content .right-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 10rem;
+}
+.header-content .right-header .name {
+  font-weight: 500;
+}
+.header-content .right-header .name span {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+.header-content .right-header p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.8rem;
+}
+.header-content .right-header .download-btn-container {
+  display: flex;
+  align-self: flex-start;
+}
+.header-content .right-header .download-btn-container .main-btn {
+  margin-top: 16px;
+  border: 1px solid var(--color-secondary);
+  line-height: 2.5rem;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 30px;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+.header-content .right-header .download-btn-container .main-btn .btn-text {
+  padding: 0 10px 0 20px;
+}
+.header-content .right-header .download-btn-container .main-btn .btn-icon {
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  padding: 15px;
+}
+.header-content .right-header .download-btn-container .main-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  z-index: -1;
+  transition: all 0.4s ease-out;
+}
+.header-content .right-header .download-btn-container .main-btn:hover::before {
+  width: 100%;
+  height: 100%;
+  transform: translateX(0);
+  background-color: var(--color-secondary);
 }/*# sourceMappingURL=styles.css.map */
