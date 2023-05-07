@@ -127,6 +127,7 @@ section {
   }
 }
 
+// Individual components
 .download-btn-container {
   display: flex;
   align-self: flex-start;
@@ -215,6 +216,8 @@ section {
     padding-right: 10rem;
     .name {
       font-weight: 500;
+      font-size: 2.75rem;
+      margin-bottom: 0.75rem;
       span {
         color: var(--color-secondary);
         font-weight: 700;
@@ -257,6 +260,10 @@ section {
   padding-top: 3.5rem;
   padding-bottom: 5rem;
   .left-about {
+    h4 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
   }
   .right-about {
     display: grid;
@@ -290,6 +297,67 @@ section {
             top: 15px;
             left: 1.75rem;
             background-color: var(--color-grey-4);
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-stats {
+  .stats-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .progress-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1.5rem;
+    .progress-bar {
+      .prog-title {
+        text-transform: uppercase;
+      }
+      .prog-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        .prog-text {
+          color: var(--color-grey-2);
+        }
+        .progress {
+          position: relative;
+          background-color: var(--color-grey-4);
+          width: 100%;
+          height: 0.45rem;
+
+          span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: var(--color-secondary);
+            height: 100%;
+          }
+
+          .html {
+            width: 85%;
+          }
+          .css {
+            width: 85%;
+          }
+          .js {
+            width: 90%;
+          }
+          .react {
+            width: 90%;
+          }
+          .java {
+            width: 70%;
+          }
+          .springboot {
+            width: 70%;
           }
         }
       }
