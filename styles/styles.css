@@ -352,4 +352,16 @@ section {
 }
 .about-stats .progress-bars .progress-bar .prog-container .progress .springboot {
   width: 70%;
+}
+
+.timeline-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }/*# sourceMappingURL=styles.css.map */
