@@ -415,6 +415,10 @@ section.portfolio .portfolios-list {
   width: 100%;
   height: 100%;
 }
+section.portfolio p {
+  font-size: 1.25rem;
+  text-align: center;
+}
 
 .portfolios-list .portfolio-item {
   position: relative;
