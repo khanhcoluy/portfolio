@@ -42,7 +42,7 @@ section {
   position: absolute;
   left: 0;
   top: 0;
-  padding: 3rem 18rem;
+  padding: 3rem 8rem;
 }
 
 .section {
@@ -258,8 +258,12 @@ section {
   padding-bottom: 5rem;
 }
 .about-container .left-about h4 {
+  text-transform: uppercase;
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
+}
+.about-container .left-about p {
+  line-height: 1.8rem;
 }
 .about-container .right-about {
   display: grid;
@@ -471,4 +475,58 @@ section.portfolio p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.left-contact {
+  flex: 2.5;
+}
+.left-contact h4 {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+}
+.left-contact .contact-text {
+  padding: 1rem 0;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+.left-contact .contact-info {
+  display: flex;
+  flex-direction: column;
+}
+.left-contact .contact-info .contact-item {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.25rem;
+}
+.left-contact .contact-info .contact-item .icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.left-contact .contact-info .contact-item .icon i {
+  width: 1rem;
+}
+.left-contact .contact-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.left-contact .contact-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: var(--color-grey-5);
+  border-radius: 50%;
+  color: var(--color-white);
+}
+
+.right-contact {
+  flex: 3;
 }/*# sourceMappingURL=styles.css.map */
