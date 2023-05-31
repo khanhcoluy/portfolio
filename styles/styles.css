@@ -29,6 +29,9 @@ body {
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
 }
+body a {
+  text-decoration: none;
+}
 
 header {
   height: 100vh;
@@ -514,7 +517,7 @@ section.portfolio p {
 .left-contact .contact-icons {
   display: flex;
   gap: 10px;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .left-contact .contact-icons a {
   display: flex;
@@ -529,4 +532,79 @@ section.portfolio p {
 
 .right-contact {
   flex: 3;
+  margin-left: 2rem;
+}
+.right-contact .contact-form .input-control {
+  margin: 1rem 0;
+}
+.right-contact .contact-form .input-control input {
+  width: 100%;
+  height: 3rem;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  background-color: var(--color-grey-5);
+  color: var(--color-white);
+}
+.right-contact .contact-form .input-control textarea {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  background-color: var(--color-grey-5);
+  color: var(--color-white);
+}
+.right-contact .contact-form .email-address-group-input {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  height: 100%;
+}
+.right-contact .contact-form .subject-line {
+  height: 100%;
+}
+.right-contact .contact-form .message {
+  height: 100%;
+  resize: none;
+}
+.right-contact .contact-form .submit-btn {
+  height: 2.5rem;
+  width: 30%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  border: 1px solid var(--color-secondary);
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0);
+  cursor: pointer;
+}
+.right-contact .contact-form .submit-btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(0%);
+  z-index: -1;
+  transition: all 0.4s ease-out;
+}
+.right-contact .contact-form .submit-btn:hover::before {
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  background-color: var(--color-secondary);
 }/*# sourceMappingURL=styles.css.map */

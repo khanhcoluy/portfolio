@@ -294,7 +294,8 @@
         </div>
       </section>
       <!-- <section class="section sec4 blogs" id="blogs"></section>  -->
-      <section class="section sec5 contact" id="contact">
+      <section class="section sec5 contact active" id="contact">
+        <!-- // remove active class here -->
         <div class="main-title">
           <h2>Contact <span>me</span><span class="bg-text">Contact</span></h2>
         </div>
@@ -362,17 +363,23 @@
             </div>
           </div>
           <div class="right-contact">
-            <form id="contact-form">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
-
-              <input type="submit" value="Submit" />
+            <form class="contact-form">
+              <div class="input-control email-address-group-input">
+                <input type="text" required placeholder="YOUR NAME" />
+                <input type="email" required placeholder="YOUR EMAIL" />
+              </div>
+              <div class="input-control subject-line">
+                <input type="text" required placeholder="ENTER SUBJECT" />
+              </div>
+              <div class="input-control message">
+                <textarea
+                  required
+                  placeholder="Message here..."
+                  cols="40"
+                  rows="9"
+                ></textarea>
+              </div>
+              <input class="submit-btn" type="submit" value="Submit" />
             </form>
           </div>
         </div>
