@@ -19,6 +19,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script src="./index.js" defer></script>
   </head>
   <body class="main-content">
@@ -363,16 +367,31 @@
             </div>
           </div>
           <div class="right-contact">
-            <form class="contact-form">
+            <form
+              id="contact-form"
+              class="contact-form"
+              onsubmit="sendEmail(event)"
+            >
               <div class="input-control email-address-group-input">
-                <input type="text" required placeholder="YOUR NAME" />
-                <input type="email" required placeholder="YOUR EMAIL" />
+                <input id="name" type="text" required placeholder="YOUR NAME" />
+                <input
+                  id="email"
+                  type="email"
+                  required
+                  placeholder="YOUR EMAIL"
+                />
               </div>
               <div class="input-control subject-line">
-                <input type="text" required placeholder="ENTER SUBJECT" />
+                <input
+                  id="subject"
+                  type="text"
+                  required
+                  placeholder="ENTER SUBJECT"
+                />
               </div>
               <div class="input-control message">
                 <textarea
+                  id="message"
                   required
                   placeholder="Message here..."
                   cols="40"
