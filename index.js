@@ -13,6 +13,7 @@ function PageTransition() {
     });
   });
 }
+PageTransition();
 
 // send email via contact form
 function sendEmail(e) {
@@ -36,15 +37,30 @@ function sendEmail(e) {
   emailjs
     .send(serviceID, templateID, templateParams)
     .then(() => {
-      // Reset the form fields
+      showToastr('success', 'Your message has been sent!');
       document.getElementById('contact-form').reset();
-      alert('Your message has been sent successfully!');
     })
     .catch((error) => {
       console.error('Error:', error);
-      alert(
-        'An error occurred while sending the message. Please try again later.'
+      showToastr(
+        'error',
+        'Oops! An error occurred while sending your message.'
       );
     });
 }
-PageTransition();
+
+function showToastr(type, message) {
+  toastr.options = {
+    closeButton: true,
+    progressBar: true,
+    positionClass: 'toast-top-right',
+    timeOut: 3000,
+    extendedTimeOut: 1000,
+  };
+
+  if (type === 'success') {
+    toastr.success(message);
+  } else if (type === 'error') {
+    toastr.error(message);
+  }
+}
