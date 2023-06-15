@@ -22,6 +22,21 @@
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Styles for the light theme */
+.light-theme {
+  --color-primary: #ffffff;
+  --color-secondary: #27ae60;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
+}
+
 body {
   background-color: var(--color-primary);
   font-family: 'Poppins', sans-serif;
@@ -631,4 +646,87 @@ section.portfolio {
       }
     }
   }
+}
+/* Styles for the slider */
+.slider {
+  position: fixed;
+  top: 75px;
+  right: 40px;
+  z-index: 9999; /* Ensure it's on top of other elements */
+  width: 60px;
+  height: 34px;
+}
+
+.slider input[type='checkbox'] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: var(--color-secondary);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+  overflow: hidden;
+}
+
+.slider label:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.slider input:checked + label {
+  background-color: var(--color-secondary);
+}
+
+.slider input:focus + label {
+  box-shadow: 0 0 1px var(--color-secondary);
+}
+
+.slider input:checked + label:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Styles for the icons */
+.slider label i {
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  color: var(--color-white);
+  transform: translateY(-50%);
+  padding: 2px;
+  transition: opacity 0.3s ease; /* Add transition for smoother effect */
+}
+
+.slider label .fa-moon {
+  left: 4px;
+}
+
+.slider label .fa-sun {
+  right: 4px;
+}
+
+.slider input:checked + label .fa-sun {
+  opacity: 0; /* Hide the sun icon when the toggle is checked */
+}
+
+.slider input:not(:checked) + label .fa-moon {
+  opacity: 0; /* Hide the moon icon when the toggle is unchecked */
 }

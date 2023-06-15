@@ -64,3 +64,10 @@ function showToastr(type, message) {
     toastr.error(message);
   }
 }
+
+const themeToggleCheckbox = document.getElementById('theme-toggle');
+const body = document.body;
+
+themeToggleCheckbox.addEventListener('change', () => {
+  body.classList.toggle('light-theme');
+});
