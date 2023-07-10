@@ -730,3 +730,5 @@ section.portfolio {
 .slider input:not(:checked) + label .fa-moon {
   opacity: 0; /* Hide the moon icon when the toggle is unchecked */
 }
+
+@import './media';

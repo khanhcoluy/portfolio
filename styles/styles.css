@@ -702,4 +702,25 @@ section.portfolio p {
 
 .slider input:not(:checked) + label .fa-moon {
   opacity: 0; /* Hide the moon icon when the toggle is unchecked */
+}
+
+@media (max-width: 900px) {
+  .section.sec1.header {
+    overflow: scroll;
+  }
+  .section.sec1.header .header-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section.sec1.header .header-content .right-header {
+    padding: 3rem;
+  }
+  .section.sec1.header .header-content .right-header h1.name {
+    font-size: 2.3rem;
+  }
+  .section.sec1.header .header-content .right-header .download-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
