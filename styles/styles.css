@@ -713,7 +713,8 @@ section.portfolio p {
     grid-template-columns: repeat(1, 1fr);
   }
   .section.sec1.header .header-content .right-header {
-    padding: 3rem;
+    grid-row: 1;
+    padding: 5rem;
   }
   .section.sec1.header .header-content .right-header h1.name {
     font-size: 2.3rem;
@@ -722,5 +723,18 @@ section.portfolio p {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+  .main-content .controls {
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--color-grey-5);
+  }
+  .main-content .controls .control {
+    margin: 1rem 0.3rem;
   }
 }/*# sourceMappingURL=styles.css.map */
