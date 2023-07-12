@@ -296,6 +296,11 @@ section {
   transition: all 0.4s ease-in-out;
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
 }
+.about-container .right-about .about-item:hover {
+  border: 1px solid var(--color-secondary);
+  transform: translateY(-5px);
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
 .about-container .right-about .about-item .about-text {
   display: flex;
   flex-direction: column;
@@ -723,6 +728,9 @@ section.portfolio p {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+  .section.sec1.header .header-content .left-header {
+    margin-bottom: 4.5rem;
   }
   .main-content .controls {
     width: 100%;
