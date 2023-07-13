@@ -40,7 +40,7 @@
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
 }
@@ -443,7 +443,6 @@ section.portfolio .portfolios-list {
   height: 100%;
 }
 section.portfolio p {
-  font-size: 1.25rem;
   text-align: center;
 }
 
@@ -709,6 +708,17 @@ section.portfolio p {
   opacity: 0; /* Hide the moon icon when the toggle is unchecked */
 }
 
+@media (max-width: 1100px) {
+  .sec5.contact .contact-container {
+    flex-wrap: wrap;
+  }
+  .sec5.contact .contact-container .left-contact {
+    flex-basis: 100%;
+  }
+  .sec5.contact .contact-container .right-contact {
+    margin-left: 0;
+  }
+}
 @media (max-width: 900px) {
   .section.sec1.header {
     overflow: scroll;
@@ -719,7 +729,7 @@ section.portfolio p {
   }
   .section.sec1.header .header-content .right-header {
     grid-row: 1;
-    padding: 5rem;
+    padding: 3rem;
   }
   .section.sec1.header .header-content .right-header h1.name {
     font-size: 2.3rem;
@@ -758,5 +768,18 @@ section.portfolio p {
   .sec2.about .timeline {
     grid-template-columns: repeat(1, 1fr);
     margin-bottom: 4.5rem;
+  }
+  .sec2.about .right-about {
+    margin-top: 2.5rem;
+    padding-left: 0;
+  }
+  .sec3.portfolio {
+    padding: 4rem 4rem 8rem 4rem;
+  }
+  .sec3.portfolio .portfolios-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sec5.contact {
+    padding: 4rem 4rem 8rem 4rem;
   }
 }/*# sourceMappingURL=styles.css.map */
